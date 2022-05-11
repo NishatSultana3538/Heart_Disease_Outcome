@@ -1,0 +1,30 @@
+demographic
+-
+Patient_ID int pk 
+HeartDisease varchar
+Sex varchar
+AgeCategory varchar
+Race varchar
+
+behavioural_data
+-
+Patient_ID int pk fk - demographic.Patient_ID
+HeartDisease varchar pk fk - demographic.HeartDisease
+BMI int
+Smoking varchar
+AlcoholDrinking varchar
+Stroke varchar
+PhysicalHealth int
+MentalHealth int
+DiffWalking varchar
+
+Disease_correlation
+-
+Patient_ID int pk fk - demographic.Patient_ID
+Diabetic varchar
+PhysicalActivity varchar
+GenHealth varchar
+SleepTime int
+Asthma varchar
+KidneyDisease
+SkinCancer varchar
